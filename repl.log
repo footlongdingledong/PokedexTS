@@ -1,0 +1,7 @@
+
+> pokedexts@1.0.0 dev
+> npx tsc && node dist/main.js
+
+Pokedex > Pokedex > Throwing a Pokeball at squirtle...
+squirtle was caught!
+Closing the Pokedex... Goodbye!
