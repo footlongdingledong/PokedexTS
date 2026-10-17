@@ -6,6 +6,7 @@ import { commandMap, commandMapb } from "./command_map.js";
 import { commandPokedex } from "./command_pokedex.js";
 import { commandInspect } from "./command_inspect.js"
 import { CLICommand } from "./state.js";
+import { commandSave, commandReset, commandLoad } from "./command_save.js";
 
 
 export function getCommands(): Record<string, CLICommand> {
@@ -49,6 +50,21 @@ export function getCommands(): Record<string, CLICommand> {
       name: "pokedex",
       description: "Lists caught Pokemon",
       callback: commandPokedex,
+    },
+    save: {
+      name: "save",
+      description: "Saves caught pokemon",
+      callback: commandSave,
+    },
+    reset: {
+      name: "reset",
+      description: "Wipes save data",
+      callback: commandReset,
+    },
+    load: {
+      name: "load",
+      description: "Loads save data",
+      callback: commandLoad,
     },
     // can add more commands here
   };
